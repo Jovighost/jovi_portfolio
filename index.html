@@ -20,9 +20,9 @@
                 </div>
                 <div class="desktop_menu">
                 <ul>
-                       <li><a href=""></a>Portfolio</li>
-                       <li><a href=""></a>About</li>
-                       <li><a href=""></a>Contact</li>
+                       <li><a href="#projects">Portfolio</a></li>
+                       <li><a href="#About">About</a></li>
+                       <li><a href="#Contact">Contact</a></li>
                         
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
                     </div>
             </section>
 
-<section class="projects">
+<section class id="projects">
 <div class="projects_heading">
     <h2>My Recent Works</h2>
     <p></p>
@@ -137,11 +137,12 @@
 </section>
 
 
-            <section class="about">
+            <section class id="About">
                 <div class="about_text">
                     <h2>about me</h2>
                     <p>I can help you build a product, feature or website look through some of my works and experience! If you like what you see and have a project you need coded,
                         don't hesitate to contact me.</p>
+                        <div class="about_button">Get my ressume</div>
                 </div>
                 <div class="about_cards">
                     <div class="about_card">
@@ -178,17 +179,20 @@
                                 </div>    
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact-section" id="Contact">
                 <div class="contact_text">
                     <p>I'm always interested in hearing  about new project, so if you'd like to chat please get in touch.</p>
                 </div>
                 <div class="contact_form">
-                    <form action="">
-                        <input type="text" placeholder="Full name" required maxlength="300">
-                        <input type="text" placeholder="Email address" required maxlength="300">
-                        <textarea placeholder="Hey I'd like to connect..." required maxlength="500"></textarea>
+                    <form action="https://formspree.io/f/xzzdlywv" method="post">
+                        <ul class="input-list">
+                            <li><input type="text" placeholder="Full name" required maxlength="300" name="name" class="input-item"></li>
+                            <li><input type="text" placeholder="Full name" required maxlength="300" name="name" class="input-item"></li>
+                        </ul>
+                        <input type="text" placeholder="Email address" required maxlength="300" name="Email" class="email">
+                        <textarea placeholder="Hey I'd like to connect..." required maxlength="500" class="message"></textarea>
                         <button type="submit">Get in touch</button>
-                        </form>
+                    </form>
                 </div>
             </section>
         </main>
