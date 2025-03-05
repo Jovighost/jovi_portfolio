@@ -1,15 +1,3 @@
-const mobileMenu = document.getElementById("mobile_menu");
-mobileMenu.addEventListener("click",()=>{
-    const destopMenu = document.getElementByI("desktop_menu")
-    destopMenu.ClassList.toggle("active");
-    mobileMenu.classList.toggle("active");
-    
-})
-// An Array for card objects
-
-
-
-
 const projectCards = [
     {Image :"",
         tittle: "Multi-post Stories Gain+Glory",
@@ -106,3 +94,12 @@ function displayProjectCard(){
     })
 }
 document.addEventListener('DOMContentLoaded', displayProjectCard);
+
+// mobile_menu
+const mobileMenu = document.getElementById("mobile_menu");
+mobileMenu.addEventListener("click",() =>{
+const desktopMenu = document.getElementById("desktop_menu");
+desktopMenu.classList.toggle("active");
+mobileMenu.classList.toggle("active");
+    }
+)
