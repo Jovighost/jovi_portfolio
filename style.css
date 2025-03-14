@@ -24,10 +24,37 @@
   .desktop_menu {
     display: none;
   }
+
+  .home_list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+  }
+
   .desktop_menu.active {
     display: flex;
   }
-  .desktop_menu.active ul{
+
+  .project_card ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+  }
+
+  .about_card ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+
+  .desktop_menu.active ul {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -39,7 +66,7 @@
     height: 100vh;
   }
 
-  .desktop_menu.active ul li a{
+  .desktop_menu.active ul li a {
     text-decoration: none;
     font-weight: 900;
     text-transform: capitalize;
@@ -47,6 +74,7 @@
     padding: 10px 40px;
     font-size: 2em;
   }
+
   .mobile_menu {
     display: flex;
     gap: 5px;
@@ -60,18 +88,99 @@
     padding: 2px 12px;
     background-color: black;
   }
+
+  .home_para p {
+    font-size: 23px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .projects_heading p {
+    padding: 2px 30px;
+    background-color: #36b37e;
+    border-radius: 2%;
+  }
+
+  .about_text p {
+    font-size: 22px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .contact_text p {
+    font-size: 32px;
+    text-align: center;
+    padding: 0 45px;
+    font-weight: bold;
+    margin: 0 22px;
+  }
+
   .mobile_menu.active p:nth-child(1) {
     rotate: 45deg;
     top: 17px;
     position: relative;
   }
-  .mobile_menu.active p:nth-child(2) {
-     opacity: 0;
+
+  .home_para p {
+    font-size: 23px;
+    text-align: center;
+    padding: 0 10px;
   }
+
+  .projects_heading p {
+    padding: 2px 30px;
+    background-color: #36b37e;
+    border-radius: 2%;
+  }
+
+  .about_text p {
+    font-size: 22px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .contact_text p {
+    font-size: 32px;
+    text-align: center;
+    padding: 0 45px;
+    font-weight: bold;
+    margin: 0 22px;
+  }
+
+  .mobile_menu.active p:nth-child(2) {
+    opacity: 0;
+  }
+
+  .home_para p {
+    font-size: 23px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .projects_heading p {
+    padding: 2px 30px;
+    background-color: #36b37e;
+    border-radius: 2%;
+  }
+
+  .about_text p {
+    font-size: 22px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .contact_text p {
+    font-size: 32px;
+    text-align: center;
+    padding: 0 45px;
+    font-weight: bold;
+    margin: 0 22px;
+  }
+
   .mobile_menu.active p:nth-child(3) {
     rotate: -45deg;
-  
   }
+
   /* mobile home section styling */
   .home {
     display: flex;
@@ -92,7 +201,7 @@
 
   .home_intro h1 span {
     color: #36b37e;
-    padding:0 10px;
+    padding: 0 10px;
     margin: -20px;
   }
 
@@ -342,10 +451,8 @@
 
 /* styling for tablet */
 
-
-
 /* media query for tablet devices */
-@media (min-width: 768px) and (max-width:1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
   footer a {
     text-decoration: none;
     text-align: center;
@@ -363,7 +470,6 @@
 
   .desktop_menu {
     display: none;
-    
   }
 
   .mobile_menu {
@@ -381,11 +487,6 @@
   }
 
 
- 
-
-
-
-
   /* mobile home section styling */
   .home {
     display: flex;
@@ -398,8 +499,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-   
-
   }
 
   .home_intro h1 {
@@ -519,7 +618,6 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
-   
   }
 
   .about_text {
@@ -529,23 +627,18 @@
     align-items: center;
     gap: 10px;
     background: url(./assets/images/illustration\ 2-about\ me\ mobile.svg) no-repeat left bottom, url(./assets/images/illustration\ 1-\ about\ me-mobile@3x.svg) right top no-repeat;
-    
-    
   }
 
   .about_text h2 {
     font-size: 40px;
     font-weight: bold;
     margin-top: 50px;
-    
-    
   }
 
   .about_text p {
     font-size: 22px;
     text-align: center;
     padding: 0 100px;
-  
   }
 
   .about_button {
@@ -667,17 +760,14 @@
     flex-direction: column;
     gap: 25px;
     margin-left: 50px;
-    
   }
 }
 
 /* styling for desktop */
 
 
-
 /* media query for desktop devices */
 @media (min-width: 1024px) {
-  
   footer a {
     text-decoration: none;
     text-align: center;
@@ -697,28 +787,26 @@
     display: flex;
     justify-content: center;
     list-style: none;
-    
   }
 
-  .desktop_menu ul{
+  .desktop_menu ul {
     display: flex;
     gap: 8px;
     font-size: 15px;
     color: purple;
   }
-  .desktop_menu ul li{
-    display: flex;
 
+  .desktop_menu ul li {
+    display: flex;
   }
 
-   .mobile_menu { 
+  .mobile_menu {
     display: none;
     gap: 5px;
     flex-direction: column;
     justify-content: center;
     align-items: end;
     margin: 10px;
-    
   }
 
   .mobile_menu p {
@@ -738,8 +826,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-   
-
   }
 
   .home_intro h1 {
@@ -757,7 +843,6 @@
     font-size: 25px;
     text-align: center;
     padding: 0 -90px 0 -500px;
-    
   }
 
   .home_list ul {
@@ -779,7 +864,6 @@
     height: 474px;
     border-radius: 8px;
     gap: 15px;
-    
   }
 
   /* project section styling */
@@ -791,7 +875,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
   }
 
   .project_heading h2 {
@@ -861,7 +944,6 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
-   
   }
 
   .about_text {
@@ -871,23 +953,18 @@
     align-items: center;
     gap: 10px;
     background: url(./assets/images/illustration\ 2-about\ me\ mobile.svg) no-repeat left bottom, url(./assets/images/illustration\ 1-\ about\ me-mobile@3x.svg) right top no-repeat;
-    
-    
   }
 
   .about_text h2 {
     font-size: 40px;
     font-weight: bold;
     margin-top: 50px;
-    
-    
   }
 
   .about_text p {
     font-size: 22px;
     text-align: center;
     padding: 0 100px;
-  
   }
 
   .about_button {
@@ -899,7 +976,6 @@
     color: white;
     font-size: 20px;
     cursor: pointer;
-    
   }
 
   .about_cards {
@@ -956,14 +1032,13 @@
   .contact-section {
     display: flex;
     flex-direction: row;
-    
     gap: 10px;
     padding: 10px;
     background: url(./assets/images/illustration-contact-form.svg) bottom right no-repeat;
-    width:100%;
+    width: 100%;
   }
 
-  .contact_text{
+  .contact_text {
     width: 40%;
   }
 
@@ -972,12 +1047,12 @@
     text-align: left;
     padding-left: 0 30px;
     font-weight: bold;
-    
   }
-  .contact_form{
+
+  .contact_form {
     width: 60%;
-    
   }
+
   .contact_form form {
     display: flex;
     flex-direction: column;
@@ -986,35 +1061,31 @@
     width: 100%;
   }
 
-  .input-list{
+  .input-list {
     display: flex;
     list-style: none;
-    
-    gap: 90px
-    
-    
-
+    gap: 90px;
   }
-.input-item{
 
-  
+  /* .input-item{
+
+
 
 }
 
 .email{
- 
- 
-}
 
+
+}
+ */
 
   .contact_form input {
-   /* width: 327px;
+    /* width: 327px;
     height: 100px;
     padding: 10px; */
-    
+
     width: 94%;
     padding: 10px;
-    
   }
 
   .contact_form textarea {
@@ -1036,7 +1107,6 @@
     cursor: pointer;
     width: 135px;
     margin: 20px;
-    
   }
 
   footer {
@@ -1045,10 +1115,60 @@
     flex-direction: column;
     gap: 25px;
     margin-left: 50px;
+  }
+
+  .modal-container {
+    display: none;  
+    font-size: large;
+    background-color: yellow;
+  }
+ 
+}
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
   
-  }
+  height: 100%;
+  width: 100%;
+   z-index: 1000; 
+  top: 0;
+  left: 0;
+  background-color: rgb(134,129,129);
+ 
+}
 
-  }
+.modalContent{
+  background-color: #fff;
+  text-align: center;
+  
+ 
 
 
+}
+.closeBtn{
+  position: relative;
+  top: -190px;
+  left: 150px;
+  font-size: 50px;
+  color:#fff ;
+  cursor: pointer;
+  font-weight: bolder;
+  
+}
+.modalContent img{
+  height: 270px;
+  width: 350px;
+  margin-top: -300px;
+  
+  border-radius: 10px;
+  
+}
+
+.modal{
+  flex-direction: column;
+  font-size: 25px;
+  
+}
 
