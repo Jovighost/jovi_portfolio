@@ -120,6 +120,7 @@ function openModal(project){
 
 
      const modalImage = document.createElement('img')
+     modalImage.classList.add('modal_image')
      modalImage.src=project.image
      modalImage.alt=project.tittle
      modalContent.appendChild(modalImage)
@@ -155,20 +156,41 @@ function openModal(project){
       modalLinks.classList.add("modallinks")
 
       const githublink = document .createElement("a")
+      const text = document.createElement('span');
+      const github_icon = document.createElement("img");
+      
       githublink.classList.add("gitHubLinks")
+      github_icon.classList.add("github_icon")
+      text.classList.add('text')
       githublink.href=project.githublink
       githublink.target="_blank"
-      githublink.innerHTML='see source'
+      text.innerHTML='see live'
+      github_icon.src = "./assets/images/Icon2.png"
+      github_icon.alt = 'github icon'
+      githublink.appendChild(text)
+      githublink.appendChild(github_icon)
       modalLinks.appendChild(githublink)
 
+
       const liveLinks = document .createElement("a")
-      liveLinks.classList.add("gitHubLinks")
+      const text1 = document.createElement('span');
+      const github_icon2 = document.createElement("img");
+      liveLinks.classList.add("see_source")
+      github_icon2.src = "./assets/images/github icon.png"
+      github_icon2.classList.add("github_icon")
+      github_icon2.alt = 'github icon'
      liveLinks.href=project.liveserverlink
       liveLinks.target="_blank"
-      liveLinks.innerHTML='see live'
+      text1.innerHTML='see source'
+      text1.classList.add('text')
+      
+      liveLinks.appendChild(text1)
+      liveLinks.appendChild(github_icon2)
       modalLinks.appendChild(liveLinks)
       modalContent.appendChild(modalLinks)
       modal.appendChild(modalContent)
+
+
 
 
 

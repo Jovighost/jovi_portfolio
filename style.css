@@ -1149,7 +1149,7 @@
 }
 .closeBtn{
   position: relative;
-  top: -190px;
+  top: -140px;
   left: 150px;
   font-size: 50px;
   color:#fff ;
@@ -1157,10 +1157,10 @@
   font-weight: bolder;
   
 }
-.modalContent img{
+.modal_image{
   height: 270px;
   width: 350px;
-  margin-top: -300px;
+  margin-top: -200px;
   
   border-radius: 10px;
   
@@ -1168,7 +1168,72 @@
 
 .modal{
   flex-direction: column;
-  font-size: 25px;
+  
   
 }
 
+.modal h2{
+  font-weight: 800px;
+  /* color: #36b37e; */
+  padding: 10px;
+}
+
+.modal  ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 20px;
+  
+  gap: 30px;
+  
+  padding: 0;
+}
+.modal li{
+  border: 2px solid ;
+  border-color: #ebf0ee;
+  
+}
+
+.modal p{
+  padding: 10px;
+  font-size: 17px;
+  margin-bottom: 2rem;
+}
+
+.modal a  {
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 6px;
+  padding-inline: 35px;
+  
+  
+  
+  
+
+}
+
+.gitHubLinks{
+  background-color: #36b37e;
+  margin-right: 2rem;
+  color:#fff
+  
+  
+}
+
+.see_source{
+  background-color: #36b37e;
+  margin-left: 1rem;
+  color: #fff
+
+}
+
+.github_icon{
+  width: 18px;
+  height: 15px;
+  color: #000;
+  margin-left: 10px;
+}
+
+.text{
+  font-size: 17px;
+}
